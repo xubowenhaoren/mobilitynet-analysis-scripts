@@ -1,0 +1,3923 @@
+{
+  "fmt_version": 1,
+  "id": "seattle_trial_1",
+  "name": "Seattle Evaluation procedure creation, trial #1",
+  "region": {
+    "osm_id": 29546940,
+    "name": "Seattle",
+    "timezone": "America/Los_Angeles"
+  },
+  "start_fmt_date": "2021-03-07",
+  "end_fmt_date": "2021-03-19",
+  "phones": {
+    "android": {
+      "ucb-sdb-android-2": "evaluation_0"
+    }
+  },
+  "calibration_tests": [
+    {
+      "id": "tracking_off_stationary",
+      "mode": null,
+      "start_loc": null,
+      "end_loc": null,
+      "config": {
+        "id": "STOP_TRACKING",
+        "name": "Tracking turned off as a control",
+        "sensing_config": {
+          "is_duty_cycling": false,
+          "accuracy": [
+            "PRIORITY_NO_POWER",
+            "kCLLocationAccuracyThreeKilometers"
+          ],
+          "filter": 1200
+        }
+      }
+    },
+    {
+      "id": "low_accuracy_stationary",
+      "mode": null,
+      "start_loc": null,
+      "end_loc": null,
+      "config": {
+        "id": "LAHFAO",
+        "name": "Low accuracy High Frequency Always On",
+        "sensing_config": {
+          "is_duty_cycling": false,
+          "accuracy": [
+            "PRIORITY_LOW_POWER",
+            "kCLLocationAccuracyKilometer"
+          ],
+          "filter": 1
+        }
+      }
+    },
+    {
+      "id": "medium_accuracy_stationary",
+      "mode": null,
+      "start_loc": null,
+      "end_loc": null,
+      "config": {
+        "id": "MAHFAO",
+        "name": "Medium accuracy High Frequency Always On",
+        "sensing_config": {
+          "is_duty_cycling": false,
+          "accuracy": [
+            "PRIORITY_BALANCED_POWER_ACCURACY",
+            "kCLLocationAccuracyHundredMeters"
+          ],
+          "filter": 1
+        }
+      }
+    },
+    {
+      "id": "high_accuracy_stationary",
+      "mode": null,
+      "start_loc": null,
+      "end_loc": null,
+      "config": {
+        "id": "HAHFAO",
+        "name": "High accuracy High Frequency Always On",
+        "sensing_config": {
+          "is_duty_cycling": false,
+          "accuracy": [
+            "PRIORITY_HIGH_ACCURACY",
+            "kCLLocationAccuracyBest"
+          ],
+          "filter": 1
+        }
+      }
+    },
+    {
+      "id": "tracking_off_train_AO",
+      "mode": "train",
+      "start_loc": {
+        "type": "Feature",
+        "properties": {
+          "osm_id": 4096800700,
+          "name": "First clipper Card reader on NB Caltrain platform"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.0773955,
+            37.3951877
+          ]
+        }
+      },
+      "end_loc": {
+        "type": "Feature",
+        "properties": {
+          "osm_id": 3478331127,
+          "name": "Last clipper card reader before exiting to Townsend Street"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.3950372,
+            37.7766824
+          ]
+        }
+      },
+      "config": {
+        "id": "STOP_TRACKING",
+        "name": "Tracking turned off as a control",
+        "sensing_config": {
+          "is_duty_cycling": false,
+          "accuracy": [
+            "PRIORITY_NO_POWER",
+            "kCLLocationAccuracyThreeKilometers"
+          ],
+          "filter": 1200
+        }
+      }
+    },
+    {
+      "id": "low_accuracy_train_AO",
+      "mode": "train",
+      "start_loc": {
+        "type": "Feature",
+        "properties": {
+          "osm_id": 3478331127,
+          "name": "Last clipper card reader before exiting to Townsend Street"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.3950372,
+            37.7766824
+          ]
+        }
+      },
+      "end_loc": {
+        "type": "Feature",
+        "properties": {
+          "osm_id": 4096800700,
+          "name": "First clipper Card reader on NB Caltrain platform"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.0773955,
+            37.3951877
+          ]
+        }
+      },
+      "config": {
+        "id": "LAHFAO",
+        "name": "Low accuracy High Frequency Always On",
+        "sensing_config": {
+          "is_duty_cycling": false,
+          "accuracy": [
+            "PRIORITY_LOW_POWER",
+            "kCLLocationAccuracyKilometer"
+          ],
+          "filter": 1
+        }
+      }
+    },
+    {
+      "id": "medium_accuracy_train_AO",
+      "mode": "train",
+      "start_loc": {
+        "type": "Feature",
+        "properties": {
+          "osm_id": 3478331121,
+          "name": "Last clipper card reader before exiting to King Street"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.3948014,
+            37.7764854
+          ]
+        }
+      },
+      "end_loc": {
+        "type": "Feature",
+        "properties": {
+          "osm_id": 5994838201,
+          "name": "Map outside Berkeley BART"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.2682602,
+            37.8701556
+          ]
+        }
+      },
+      "config": {
+        "id": "MAHFAO",
+        "name": "Medium accuracy High Frequency Always On",
+        "sensing_config": {
+          "is_duty_cycling": false,
+          "accuracy": [
+            "PRIORITY_BALANCED_POWER_ACCURACY",
+            "kCLLocationAccuracyHundredMeters"
+          ],
+          "filter": 1
+        }
+      }
+    },
+    {
+      "id": "high_accuracy_train_AO",
+      "mode": "train",
+      "start_loc": {
+        "type": "Feature",
+        "properties": {
+          "osm_id": 4096800700,
+          "name": "First clipper Card reader on NB Caltrain platform"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.0773955,
+            37.3951877
+          ]
+        }
+      },
+      "end_loc": {
+        "type": "Feature",
+        "properties": {
+          "osm_id": 3478331127,
+          "name": "Last clipper card reader before exiting to Townsend Street"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.3950372,
+            37.7766824
+          ]
+        }
+      },
+      "config": {
+        "id": "HAHFAO",
+        "name": "High accuracy High Frequency Always On",
+        "sensing_config": {
+          "is_duty_cycling": false,
+          "accuracy": [
+            "PRIORITY_HIGH_ACCURACY",
+            "kCLLocationAccuracyBest"
+          ],
+          "filter": 1
+        }
+      }
+    }
+  ],
+  "sensing_settings": [
+    {
+      "android": {
+        "compare": [
+          "HAHFDC",
+          "HAMFDC"
+        ],
+        "name": "HAHFDC v/s HAMFDC",
+        "sensing_configs": [
+          {
+            "id": "HAHFDC",
+            "name": "High accuracy High Frequency Duty Cycling",
+            "sensing_config": {
+              "is_duty_cycling": true,
+              "accuracy": [
+                "PRIORITY_HIGH_ACCURACY",
+                "kCLLocationAccuracyBest"
+              ],
+              "filter": 1
+            }
+          },
+          {
+            "id": "HAMFDC",
+            "name": "High accuracy Medium Frequency Duty Cycling",
+            "sensing_config": {
+              "is_duty_cycling": true,
+              "accuracy": [
+                "PRIORITY_HIGH_ACCURACY",
+                "kCLLocationAccuracyBest"
+              ],
+              "filter": 30
+            }
+          }
+        ]
+      },
+      "ios": {
+        "compare": [
+          "HAHFDC",
+          "HAMFDC"
+        ],
+        "name": "HAHFDC v/s HAMFDC",
+        "sensing_configs": [
+          {
+            "id": "HAHFDC",
+            "name": "High accuracy High Frequency Duty Cycling",
+            "sensing_config": {
+              "is_duty_cycling": true,
+              "accuracy": [
+                "PRIORITY_HIGH_ACCURACY",
+                "kCLLocationAccuracyBest"
+              ],
+              "filter": 1
+            }
+          },
+          {
+            "id": "HAMFDC",
+            "name": "High accuracy Medium Frequency Duty Cycling",
+            "sensing_config": {
+              "is_duty_cycling": true,
+              "accuracy": [
+                "PRIORITY_HIGH_ACCURACY",
+                "kCLLocationAccuracyBest"
+              ],
+              "filter": 30
+            }
+          }
+        ]
+      }
+    },
+    {
+      "android": {
+        "compare": [
+          "HAMFDC",
+          "HALFDC"
+        ],
+        "name": "HAMFDC v/s HALFDC",
+        "sensing_configs": [
+          {
+            "id": "HAMFDC",
+            "name": "High accuracy Medium Frequency Duty Cycling",
+            "sensing_config": {
+              "is_duty_cycling": true,
+              "accuracy": [
+                "PRIORITY_HIGH_ACCURACY",
+                "kCLLocationAccuracyBest"
+              ],
+              "filter": 30
+            }
+          },
+          {
+            "id": "HALFDC",
+            "name": "High accuracy Low Frequency Duty Cycling",
+            "sensing_config": {
+              "is_duty_cycling": true,
+              "accuracy": [
+                "PRIORITY_HIGH_ACCURACY",
+                "kCLLocationAccuracyBest"
+              ],
+              "filter": 120
+            }
+          }
+        ]
+      },
+      "ios": {
+        "compare": [
+          "HAMFDC",
+          "HALFDC"
+        ],
+        "name": "HAMFDC v/s HALFDC",
+        "sensing_configs": [
+          {
+            "id": "HAMFDC",
+            "name": "High accuracy Medium Frequency Duty Cycling",
+            "sensing_config": {
+              "is_duty_cycling": true,
+              "accuracy": [
+                "PRIORITY_HIGH_ACCURACY",
+                "kCLLocationAccuracyBest"
+              ],
+              "filter": 30
+            }
+          },
+          {
+            "id": "HALFDC",
+            "name": "High accuracy Low Frequency Duty Cycling",
+            "sensing_config": {
+              "is_duty_cycling": true,
+              "accuracy": [
+                "PRIORITY_HIGH_ACCURACY",
+                "kCLLocationAccuracyBest"
+              ],
+              "filter": 120
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "evaluation_trips": [
+    {
+      "id": "suburb_drive",
+      "name": "Drive from foothill to Mountain View",
+      "legs": [
+        {
+          "id": "walk_start",
+          "type": "ACCESS",
+          "mode": "WALKING",
+          "name": "Walk from the building to your vehicle",
+          "loc": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Foothill Parking Lot",
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -122.13057607412338,
+                      37.35985002429301
+                    ],
+                    [
+                      -122.13042318820953,
+                      37.35959632453568
+                    ],
+                    [
+                      -122.13010132312775,
+                      37.35946201255223
+                    ],
+                    [
+                      -122.12991356849669,
+                      37.3596560186734
+                    ],
+                    [
+                      -122.13008791208267,
+                      37.359871343561295
+                    ],
+                    [
+                      -122.13026762008667,
+                      37.36000778673485
+                    ],
+                    [
+                      -122.13057607412338,
+                      37.35985002429301
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "suburb_drive",
+          "mode": "CAR",
+          "name": "Drive from foothill to Mountain View",
+          "start_loc": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Foothill Parking Lot",
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -122.13057607412338,
+                      37.35985002429301
+                    ],
+                    [
+                      -122.13042318820953,
+                      37.35959632453568
+                    ],
+                    [
+                      -122.13010132312775,
+                      37.35946201255223
+                    ],
+                    [
+                      -122.12991356849669,
+                      37.3596560186734
+                    ],
+                    [
+                      -122.13008791208267,
+                      37.359871343561295
+                    ],
+                    [
+                      -122.13026762008667,
+                      37.36000778673485
+                    ],
+                    [
+                      -122.13057607412338,
+                      37.35985002429301
+                    ]
+                  ]
+                ]
+              }
+            }
+          ],
+          "end_loc": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Mountain View Library",
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -122.08355963230133,
+                      37.39091642895306
+                    ],
+                    [
+                      -122.08428382873535,
+                      37.38975713188671
+                    ],
+                    [
+                      -122.08383858203888,
+                      37.389573859018185
+                    ],
+                    [
+                      -122.08340406417847,
+                      37.390196132517175
+                    ],
+                    [
+                      -122.08311975002289,
+                      37.39012793841312
+                    ],
+                    [
+                      -122.08280861377716,
+                      37.390656441096894
+                    ],
+                    [
+                      -122.08355426788331,
+                      37.39096757399895
+                    ],
+                    [
+                      -122.08355963230133,
+                      37.39091642895306
+                    ]
+                  ]
+                ]
+              }
+            }
+          ],
+          "polyline": "ey_cFnqlhVa@VPb@Nb@Nb@Ph@BHPMLMLMJMJKFKBCJQ\\i@HQDQBS@a@@c@ASAQESGSy@yBGSGUESCWCO?SBMDKDGHKHOFODUBU?SCQAGCIIOMSIKKIKIEGk@a@GGCAa@]GGQKFOFe@Vq@HsDIs@GcBBQBKFODKBCLGHCFAH?J?@w@BmA?a@Aa@Ca@Ea@Ia@K_@GQCKAAGQUg@OWmDmEoBaCmA_BmB_CmBcCMOOQACGIY_@EGe@c@uE_Fy@u@_CoBe@a@OMIICAg@g@uBwByDoDsC}B{AcBKKMOAASSMQi@o@y@y@yBuBOOu@q@CCKKUUMKi@g@w@_@QI_Ay@QMKWo@e@i@c@QAKIQOYS_@YEEK]OO}@s@g@c@cA{@WUa@[CAUCHU@CNe@@EVgAL}@Bk@Bk@AaB?mU?C?O?U?aG@yY?c@?A?UFU@AFOJQNWHODUBY@_I?i@?c@@sD@wB?o@?OS?A?iBEC?IIGI???[?C@aE?iB@eD?uD@Q?g@?a@?o@?C?]A?W@MAG?kCS??cIBa@?UAg@?O?A?}A@{A?yD@yD@yD@????@_@I_@Uo@W[[SWIOEQAYAA?]Aa@GQGMEgB_AeAk@q@_@qBeAMGeCqASKu@a@SKOIQIOK[OAASIe@KKECAIE_@Qi@UMGi@Yc@SYQMIIEQKAAOIWMOIQIKGECCAMGSKwAw@SKKX]bAITM^CHKZeAvCCHITUn@ABCJMGAAyAu@ECYO{Ay@",
+          "type": "TRAVEL",
+          "route_coords": [
+            {
+              "type": "Feature",
+              "properties": {
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    -122.13032,
+                    37.35971
+                  ],
+                  [
+                    -122.13044,
+                    37.35988
+                  ],
+                  [
+                    -122.13062,
+                    37.35979
+                  ],
+                  [
+                    -122.1308,
+                    37.35971
+                  ],
+                  [
+                    -122.13098,
+                    37.35963
+                  ],
+                  [
+                    -122.13119,
+                    37.35954
+                  ],
+                  [
+                    -122.13124,
+                    37.35952
+                  ],
+                  [
+                    -122.13117,
+                    37.35943
+                  ],
+                  [
+                    -122.1311,
+                    37.35936
+                  ],
+                  [
+                    -122.13103,
+                    37.35929
+                  ],
+                  [
+                    -122.13096,
+                    37.35923
+                  ],
+                  [
+                    -122.1309,
+                    37.35917
+                  ],
+                  [
+                    -122.13084,
+                    37.35913
+                  ],
+                  [
+                    -122.13082,
+                    37.35911
+                  ],
+                  [
+                    -122.13073,
+                    37.35905
+                  ],
+                  [
+                    -122.13052,
+                    37.3589
+                  ],
+                  [
+                    -122.13043,
+                    37.35885
+                  ],
+                  [
+                    -122.13034,
+                    37.35882
+                  ],
+                  [
+                    -122.13024,
+                    37.3588
+                  ],
+                  [
+                    -122.13007,
+                    37.35879
+                  ],
+                  [
+                    -122.12989,
+                    37.35878
+                  ],
+                  [
+                    -122.12979,
+                    37.35879
+                  ],
+                  [
+                    -122.1297,
+                    37.3588
+                  ],
+                  [
+                    -122.1296,
+                    37.35883
+                  ],
+                  [
+                    -122.1295,
+                    37.35887
+                  ],
+                  [
+                    -122.12889,
+                    37.35916
+                  ],
+                  [
+                    -122.12879,
+                    37.3592
+                  ],
+                  [
+                    -122.12868,
+                    37.35924
+                  ],
+                  [
+                    -122.12858,
+                    37.35927
+                  ],
+                  [
+                    -122.12846,
+                    37.35929
+                  ],
+                  [
+                    -122.12838,
+                    37.35931
+                  ],
+                  [
+                    -122.12828,
+                    37.35931
+                  ],
+                  [
+                    -122.12821,
+                    37.35929
+                  ],
+                  [
+                    -122.12815,
+                    37.35926
+                  ],
+                  [
+                    -122.12811,
+                    37.35923
+                  ],
+                  [
+                    -122.12805,
+                    37.35918
+                  ],
+                  [
+                    -122.12797,
+                    37.35913
+                  ],
+                  [
+                    -122.12789,
+                    37.35909
+                  ],
+                  [
+                    -122.12778,
+                    37.35906
+                  ],
+                  [
+                    -122.12767,
+                    37.35904
+                  ],
+                  [
+                    -122.12757,
+                    37.35904
+                  ],
+                  [
+                    -122.12748,
+                    37.35906
+                  ],
+                  [
+                    -122.12744,
+                    37.35907
+                  ],
+                  [
+                    -122.12739,
+                    37.35909
+                  ],
+                  [
+                    -122.12731,
+                    37.35914
+                  ],
+                  [
+                    -122.12721,
+                    37.35921
+                  ],
+                  [
+                    -122.12715,
+                    37.35926
+                  ],
+                  [
+                    -122.1271,
+                    37.35932
+                  ],
+                  [
+                    -122.12705,
+                    37.35938
+                  ],
+                  [
+                    -122.12701,
+                    37.35941
+                  ],
+                  [
+                    -122.12684,
+                    37.35963
+                  ],
+                  [
+                    -122.1268,
+                    37.35967
+                  ],
+                  [
+                    -122.12679,
+                    37.35969
+                  ],
+                  [
+                    -122.12664,
+                    37.35986
+                  ],
+                  [
+                    -122.1266,
+                    37.3599
+                  ],
+                  [
+                    -122.12654,
+                    37.35999
+                  ],
+                  [
+                    -122.12646,
+                    37.35995
+                  ],
+                  [
+                    -122.12627,
+                    37.35991
+                  ],
+                  [
+                    -122.12602,
+                    37.35979
+                  ],
+                  [
+                    -122.12512,
+                    37.35974
+                  ],
+                  [
+                    -122.12486,
+                    37.35979
+                  ],
+                  [
+                    -122.12436,
+                    37.35983
+                  ],
+                  [
+                    -122.12427,
+                    37.35981
+                  ],
+                  [
+                    -122.12421,
+                    37.35979
+                  ],
+                  [
+                    -122.12413,
+                    37.35975
+                  ],
+                  [
+                    -122.12407,
+                    37.35972
+                  ],
+                  [
+                    -122.12405,
+                    37.3597
+                  ],
+                  [
+                    -122.12401,
+                    37.35963
+                  ],
+                  [
+                    -122.12399,
+                    37.35958
+                  ],
+                  [
+                    -122.12398,
+                    37.35954
+                  ],
+                  [
+                    -122.12398,
+                    37.35949
+                  ],
+                  [
+                    -122.12398,
+                    37.35943
+                  ],
+                  [
+                    -122.1237,
+                    37.35942
+                  ],
+                  [
+                    -122.12331,
+                    37.3594
+                  ],
+                  [
+                    -122.12314,
+                    37.3594
+                  ],
+                  [
+                    -122.12297,
+                    37.35941
+                  ],
+                  [
+                    -122.1228,
+                    37.35943
+                  ],
+                  [
+                    -122.12263,
+                    37.35946
+                  ],
+                  [
+                    -122.12246,
+                    37.35951
+                  ],
+                  [
+                    -122.1223,
+                    37.35957
+                  ],
+                  [
+                    -122.12221,
+                    37.35961
+                  ],
+                  [
+                    -122.12215,
+                    37.35963
+                  ],
+                  [
+                    -122.12214,
+                    37.35964
+                  ],
+                  [
+                    -122.12205,
+                    37.35968
+                  ],
+                  [
+                    -122.12185,
+                    37.35979
+                  ],
+                  [
+                    -122.12173,
+                    37.35987
+                  ],
+                  [
+                    -122.1207,
+                    37.36074
+                  ],
+                  [
+                    -122.12005,
+                    37.3613
+                  ],
+                  [
+                    -122.11957,
+                    37.36169
+                  ],
+                  [
+                    -122.11893,
+                    37.36224
+                  ],
+                  [
+                    -122.11827,
+                    37.36279
+                  ],
+                  [
+                    -122.11819,
+                    37.36286
+                  ],
+                  [
+                    -122.1181,
+                    37.36294
+                  ],
+                  [
+                    -122.11808,
+                    37.36295
+                  ],
+                  [
+                    -122.11803,
+                    37.36299
+                  ],
+                  [
+                    -122.11787,
+                    37.36312
+                  ],
+                  [
+                    -122.11783,
+                    37.36315
+                  ],
+                  [
+                    -122.11765,
+                    37.36334
+                  ],
+                  [
+                    -122.11653,
+                    37.36441
+                  ],
+                  [
+                    -122.11626,
+                    37.3647
+                  ],
+                  [
+                    -122.1157,
+                    37.36534
+                  ],
+                  [
+                    -122.11553,
+                    37.36553
+                  ],
+                  [
+                    -122.11546,
+                    37.36561
+                  ],
+                  [
+                    -122.11541,
+                    37.36566
+                  ],
+                  [
+                    -122.1154,
+                    37.36568
+                  ],
+                  [
+                    -122.1152,
+                    37.36588
+                  ],
+                  [
+                    -122.1146,
+                    37.36647
+                  ],
+                  [
+                    -122.11372,
+                    37.3674
+                  ],
+                  [
+                    -122.11309,
+                    37.36814
+                  ],
+                  [
+                    -122.11259,
+                    37.3686
+                  ],
+                  [
+                    -122.11253,
+                    37.36866
+                  ],
+                  [
+                    -122.11245,
+                    37.36873
+                  ],
+                  [
+                    -122.11244,
+                    37.36874
+                  ],
+                  [
+                    -122.11234,
+                    37.36884
+                  ],
+                  [
+                    -122.11225,
+                    37.36891
+                  ],
+                  [
+                    -122.11201,
+                    37.36912
+                  ],
+                  [
+                    -122.11172,
+                    37.36941
+                  ],
+                  [
+                    -122.11113,
+                    37.37002
+                  ],
+                  [
+                    -122.11105,
+                    37.3701
+                  ],
+                  [
+                    -122.1108,
+                    37.37037
+                  ],
+                  [
+                    -122.11078,
+                    37.37039
+                  ],
+                  [
+                    -122.11072,
+                    37.37045
+                  ],
+                  [
+                    -122.11061,
+                    37.37056
+                  ],
+                  [
+                    -122.11055,
+                    37.37063
+                  ],
+                  [
+                    -122.11035,
+                    37.37084
+                  ],
+                  [
+                    -122.11019,
+                    37.37112
+                  ],
+                  [
+                    -122.11014,
+                    37.37121
+                  ],
+                  [
+                    -122.10985,
+                    37.37153
+                  ],
+                  [
+                    -122.10978,
+                    37.37162
+                  ],
+                  [
+                    -122.10966,
+                    37.37168
+                  ],
+                  [
+                    -122.10947,
+                    37.37192
+                  ],
+                  [
+                    -122.10929,
+                    37.37213
+                  ],
+                  [
+                    -122.10928,
+                    37.37222
+                  ],
+                  [
+                    -122.10923,
+                    37.37228
+                  ],
+                  [
+                    -122.10915,
+                    37.37237
+                  ],
+                  [
+                    -122.10905,
+                    37.3725
+                  ],
+                  [
+                    -122.10892,
+                    37.37266
+                  ],
+                  [
+                    -122.10889,
+                    37.37269
+                  ],
+                  [
+                    -122.10874,
+                    37.37275
+                  ],
+                  [
+                    -122.10866,
+                    37.37283
+                  ],
+                  [
+                    -122.1084,
+                    37.37314
+                  ],
+                  [
+                    -122.10822,
+                    37.37334
+                  ],
+                  [
+                    -122.10792,
+                    37.37368
+                  ],
+                  [
+                    -122.10781,
+                    37.3738
+                  ],
+                  [
+                    -122.10767,
+                    37.37397
+                  ],
+                  [
+                    -122.10766,
+                    37.37399
+                  ],
+                  [
+                    -122.10764,
+                    37.3741
+                  ],
+                  [
+                    -122.10753,
+                    37.37405
+                  ],
+                  [
+                    -122.10751,
+                    37.37404
+                  ],
+                  [
+                    -122.10732,
+                    37.37396
+                  ],
+                  [
+                    -122.10729,
+                    37.37395
+                  ],
+                  [
+                    -122.10693,
+                    37.37383
+                  ],
+                  [
+                    -122.10662,
+                    37.37376
+                  ],
+                  [
+                    -122.1064,
+                    37.37374
+                  ],
+                  [
+                    -122.10618,
+                    37.37372
+                  ],
+                  [
+                    -122.10569,
+                    37.37373
+                  ],
+                  [
+                    -122.1021,
+                    37.37373
+                  ],
+                  [
+                    -122.10208,
+                    37.37373
+                  ],
+                  [
+                    -122.102,
+                    37.37373
+                  ],
+                  [
+                    -122.10189,
+                    37.37373
+                  ],
+                  [
+                    -122.1006,
+                    37.37373
+                  ],
+                  [
+                    -122.09631,
+                    37.37372
+                  ],
+                  [
+                    -122.09613,
+                    37.37372
+                  ],
+                  [
+                    -122.09612,
+                    37.37372
+                  ],
+                  [
+                    -122.09601,
+                    37.37372
+                  ],
+                  [
+                    -122.0959,
+                    37.37368
+                  ],
+                  [
+                    -122.09589,
+                    37.37367
+                  ],
+                  [
+                    -122.09581,
+                    37.37363
+                  ],
+                  [
+                    -122.09572,
+                    37.37357
+                  ],
+                  [
+                    -122.0956,
+                    37.37349
+                  ],
+                  [
+                    -122.09552,
+                    37.37344
+                  ],
+                  [
+                    -122.09541,
+                    37.37341
+                  ],
+                  [
+                    -122.09528,
+                    37.37339
+                  ],
+                  [
+                    -122.09368,
+                    37.37338
+                  ],
+                  [
+                    -122.09347,
+                    37.37338
+                  ],
+                  [
+                    -122.09329,
+                    37.37338
+                  ],
+                  [
+                    -122.09239,
+                    37.37337
+                  ],
+                  [
+                    -122.09179,
+                    37.37336
+                  ],
+                  [
+                    -122.09155,
+                    37.37336
+                  ],
+                  [
+                    -122.09147,
+                    37.37336
+                  ],
+                  [
+                    -122.09147,
+                    37.37346
+                  ],
+                  [
+                    -122.09147,
+                    37.37347
+                  ],
+                  [
+                    -122.09144,
+                    37.374
+                  ],
+                  [
+                    -122.09144,
+                    37.37402
+                  ],
+                  [
+                    -122.09139,
+                    37.37407
+                  ],
+                  [
+                    -122.09134,
+                    37.37411
+                  ],
+                  [
+                    -122.09134,
+                    37.37411
+                  ],
+                  [
+                    -122.0912,
+                    37.37411
+                  ],
+                  [
+                    -122.09118,
+                    37.37411
+                  ],
+                  [
+                    -122.09021,
+                    37.3741
+                  ],
+                  [
+                    -122.08968,
+                    37.3741
+                  ],
+                  [
+                    -122.08885,
+                    37.37409
+                  ],
+                  [
+                    -122.08794,
+                    37.37409
+                  ],
+                  [
+                    -122.08785,
+                    37.37408
+                  ],
+                  [
+                    -122.08765,
+                    37.37408
+                  ],
+                  [
+                    -122.08748,
+                    37.37408
+                  ],
+                  [
+                    -122.08724,
+                    37.37408
+                  ],
+                  [
+                    -122.08722,
+                    37.37408
+                  ],
+                  [
+                    -122.08707,
+                    37.37408
+                  ],
+                  [
+                    -122.08707,
+                    37.37409
+                  ],
+                  [
+                    -122.08708,
+                    37.37421
+                  ],
+                  [
+                    -122.08707,
+                    37.37428
+                  ],
+                  [
+                    -122.08707,
+                    37.37432
+                  ],
+                  [
+                    -122.08697,
+                    37.37502
+                  ],
+                  [
+                    -122.08697,
+                    37.37502
+                  ],
+                  [
+                    -122.08699,
+                    37.37664
+                  ],
+                  [
+                    -122.08699,
+                    37.37681
+                  ],
+                  [
+                    -122.08698,
+                    37.37692
+                  ],
+                  [
+                    -122.08698,
+                    37.37712
+                  ],
+                  [
+                    -122.08698,
+                    37.3772
+                  ],
+                  [
+                    -122.08698,
+                    37.37721
+                  ],
+                  [
+                    -122.08699,
+                    37.37768
+                  ],
+                  [
+                    -122.08699,
+                    37.37814
+                  ],
+                  [
+                    -122.087,
+                    37.37907
+                  ],
+                  [
+                    -122.08701,
+                    37.38
+                  ],
+                  [
+                    -122.08702,
+                    37.38093
+                  ],
+                  [
+                    -122.08702,
+                    37.38093
+                  ],
+                  [
+                    -122.08702,
+                    37.38093
+                  ],
+                  [
+                    -122.08686,
+                    37.38092
+                  ],
+                  [
+                    -122.0867,
+                    37.38097
+                  ],
+                  [
+                    -122.08646,
+                    37.38108
+                  ],
+                  [
+                    -122.08632,
+                    37.3812
+                  ],
+                  [
+                    -122.08622,
+                    37.38134
+                  ],
+                  [
+                    -122.08617,
+                    37.38146
+                  ],
+                  [
+                    -122.08614,
+                    37.38154
+                  ],
+                  [
+                    -122.08613,
+                    37.38163
+                  ],
+                  [
+                    -122.08612,
+                    37.38176
+                  ],
+                  [
+                    -122.08612,
+                    37.38177
+                  ],
+                  [
+                    -122.08611,
+                    37.38192
+                  ],
+                  [
+                    -122.08607,
+                    37.38209
+                  ],
+                  [
+                    -122.08603,
+                    37.38218
+                  ],
+                  [
+                    -122.086,
+                    37.38225
+                  ],
+                  [
+                    -122.08568,
+                    37.38277
+                  ],
+                  [
+                    -122.08546,
+                    37.38312
+                  ],
+                  [
+                    -122.0853,
+                    37.38337
+                  ],
+                  [
+                    -122.08495,
+                    37.38394
+                  ],
+                  [
+                    -122.08491,
+                    37.38401
+                  ],
+                  [
+                    -122.0845,
+                    37.38468
+                  ],
+                  [
+                    -122.08444,
+                    37.38478
+                  ],
+                  [
+                    -122.08427,
+                    37.38505
+                  ],
+                  [
+                    -122.08421,
+                    37.38515
+                  ],
+                  [
+                    -122.08416,
+                    37.38523
+                  ],
+                  [
+                    -122.08411,
+                    37.38532
+                  ],
+                  [
+                    -122.08405,
+                    37.3854
+                  ],
+                  [
+                    -122.08397,
+                    37.38554
+                  ],
+                  [
+                    -122.08396,
+                    37.38555
+                  ],
+                  [
+                    -122.08391,
+                    37.38565
+                  ],
+                  [
+                    -122.08385,
+                    37.38584
+                  ],
+                  [
+                    -122.08382,
+                    37.3859
+                  ],
+                  [
+                    -122.08381,
+                    37.38592
+                  ],
+                  [
+                    -122.08378,
+                    37.38597
+                  ],
+                  [
+                    -122.08369,
+                    37.38613
+                  ],
+                  [
+                    -122.08358,
+                    37.38634
+                  ],
+                  [
+                    -122.08354,
+                    37.38641
+                  ],
+                  [
+                    -122.08341,
+                    37.38662
+                  ],
+                  [
+                    -122.08331,
+                    37.3868
+                  ],
+                  [
+                    -122.08322,
+                    37.38693
+                  ],
+                  [
+                    -122.08317,
+                    37.387
+                  ],
+                  [
+                    -122.08314,
+                    37.38705
+                  ],
+                  [
+                    -122.08308,
+                    37.38714
+                  ],
+                  [
+                    -122.08307,
+                    37.38715
+                  ],
+                  [
+                    -122.08302,
+                    37.38723
+                  ],
+                  [
+                    -122.08295,
+                    37.38735
+                  ],
+                  [
+                    -122.0829,
+                    37.38743
+                  ],
+                  [
+                    -122.08285,
+                    37.38752
+                  ],
+                  [
+                    -122.08281,
+                    37.38758
+                  ],
+                  [
+                    -122.08279,
+                    37.38761
+                  ],
+                  [
+                    -122.08278,
+                    37.38763
+                  ],
+                  [
+                    -122.08274,
+                    37.3877
+                  ],
+                  [
+                    -122.08268,
+                    37.3878
+                  ],
+                  [
+                    -122.0824,
+                    37.38824
+                  ],
+                  [
+                    -122.08234,
+                    37.38834
+                  ],
+                  [
+                    -122.08247,
+                    37.3884
+                  ],
+                  [
+                    -122.08281,
+                    37.38855
+                  ],
+                  [
+                    -122.08292,
+                    37.3886
+                  ],
+                  [
+                    -122.08308,
+                    37.38867
+                  ],
+                  [
+                    -122.08313,
+                    37.38869
+                  ],
+                  [
+                    -122.08327,
+                    37.38875
+                  ],
+                  [
+                    -122.08403,
+                    37.3891
+                  ],
+                  [
+                    -122.08408,
+                    37.38912
+                  ],
+                  [
+                    -122.08419,
+                    37.38917
+                  ],
+                  [
+                    -122.08443,
+                    37.38928
+                  ],
+                  [
+                    -122.08445,
+                    37.38929
+                  ],
+                  [
+                    -122.08451,
+                    37.38931
+                  ],
+                  [
+                    -122.08447,
+                    37.38938
+                  ],
+                  [
+                    -122.08446,
+                    37.38939
+                  ],
+                  [
+                    -122.08419,
+                    37.38984
+                  ],
+                  [
+                    -122.08417,
+                    37.38987
+                  ],
+                  [
+                    -122.08409,
+                    37.39
+                  ],
+                  [
+                    -122.0838,
+                    37.39046
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "walk_end",
+          "type": "ACCESS",
+          "mode": "WALKING",
+          "name": "Walk from your vehicle to the building",
+          "loc": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Mountain View Library",
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -122.08355963230133,
+                      37.39091642895306
+                    ],
+                    [
+                      -122.08428382873535,
+                      37.38975713188671
+                    ],
+                    [
+                      -122.08383858203888,
+                      37.389573859018185
+                    ],
+                    [
+                      -122.08340406417847,
+                      37.390196132517175
+                    ],
+                    [
+                      -122.08311975002289,
+                      37.39012793841312
+                    ],
+                    [
+                      -122.08280861377716,
+                      37.390656441096894
+                    ],
+                    [
+                      -122.08355426788331,
+                      37.39096757399895
+                    ],
+                    [
+                      -122.08355963230133,
+                      37.39091642895306
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "short_multimodal",
+      "name": "Bus to Foothilll",
+      "legs": [
+        {
+          "id": "walk_to_bus_stop",
+          "name": "Mountain View Library to #52 bus stop at El Camino/Castro",
+          "mode": "WALKING",
+          "start_loc": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Mountain View Library",
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -122.08355963230133,
+                      37.39091642895306
+                    ],
+                    [
+                      -122.08428382873535,
+                      37.38975713188671
+                    ],
+                    [
+                      -122.08383858203888,
+                      37.389573859018185
+                    ],
+                    [
+                      -122.08340406417847,
+                      37.390196132517175
+                    ],
+                    [
+                      -122.08311975002289,
+                      37.39012793841312
+                    ],
+                    [
+                      -122.08280861377716,
+                      37.390656441096894
+                    ],
+                    [
+                      -122.08355426788331,
+                      37.39096757399895
+                    ],
+                    [
+                      -122.08355963230133,
+                      37.39091642895306
+                    ]
+                  ]
+                ]
+              }
+            }
+          ],
+          "end_loc": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "# 52 bus stop to Foothill College",
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -122.0847062766552,
+                      37.38615232803594
+                    ],
+                    [
+                      -122.08424627780914,
+                      37.38591043874643
+                    ],
+                    [
+                      -122.08412557840347,
+                      37.386083064662735
+                    ],
+                    [
+                      -122.08460032939912,
+                      37.38629298576617
+                    ],
+                    [
+                      -122.0847062766552,
+                      37.38615232803594
+                    ]
+                  ]
+                ]
+              }
+            }
+          ],
+          "polyline": "{yecFnnchVjB`AXNDBxAt@@@LFBK@C??To@HUBIdAwCJ[BIL_@HU\\cA??JYRJ??vAv@RJLFB@DBJFPHNHVLNH@@PJHDLHXPb@Rh@XLFh@T^PHDB@JDMZQb@AFCDYr@A@??",
+          "type": "TRAVEL",
+          "route_coords": [
+            {
+              "type": "Feature",
+              "properties": {
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    -122.08376,
+                    37.39054
+                  ],
+                  [
+                    -122.08409,
+                    37.39
+                  ],
+                  [
+                    -122.08417,
+                    37.38987
+                  ],
+                  [
+                    -122.08419,
+                    37.38984
+                  ],
+                  [
+                    -122.08446,
+                    37.38939
+                  ],
+                  [
+                    -122.08447,
+                    37.38938
+                  ],
+                  [
+                    -122.08451,
+                    37.38931
+                  ],
+                  [
+                    -122.08445,
+                    37.38929
+                  ],
+                  [
+                    -122.08443,
+                    37.38928
+                  ],
+                  [
+                    -122.08443,
+                    37.38928
+                  ],
+                  [
+                    -122.08419,
+                    37.38917
+                  ],
+                  [
+                    -122.08408,
+                    37.38912
+                  ],
+                  [
+                    -122.08403,
+                    37.3891
+                  ],
+                  [
+                    -122.08327,
+                    37.38875
+                  ],
+                  [
+                    -122.08313,
+                    37.38869
+                  ],
+                  [
+                    -122.08308,
+                    37.38867
+                  ],
+                  [
+                    -122.08292,
+                    37.3886
+                  ],
+                  [
+                    -122.08281,
+                    37.38855
+                  ],
+                  [
+                    -122.08247,
+                    37.3884
+                  ],
+                  [
+                    -122.08247,
+                    37.3884
+                  ],
+                  [
+                    -122.08234,
+                    37.38834
+                  ],
+                  [
+                    -122.0824,
+                    37.38824
+                  ],
+                  [
+                    -122.0824,
+                    37.38824
+                  ],
+                  [
+                    -122.08268,
+                    37.3878
+                  ],
+                  [
+                    -122.08274,
+                    37.3877
+                  ],
+                  [
+                    -122.08278,
+                    37.38763
+                  ],
+                  [
+                    -122.08279,
+                    37.38761
+                  ],
+                  [
+                    -122.08281,
+                    37.38758
+                  ],
+                  [
+                    -122.08285,
+                    37.38752
+                  ],
+                  [
+                    -122.0829,
+                    37.38743
+                  ],
+                  [
+                    -122.08295,
+                    37.38735
+                  ],
+                  [
+                    -122.08302,
+                    37.38723
+                  ],
+                  [
+                    -122.08307,
+                    37.38715
+                  ],
+                  [
+                    -122.08308,
+                    37.38714
+                  ],
+                  [
+                    -122.08314,
+                    37.38705
+                  ],
+                  [
+                    -122.08317,
+                    37.387
+                  ],
+                  [
+                    -122.08322,
+                    37.38693
+                  ],
+                  [
+                    -122.08331,
+                    37.3868
+                  ],
+                  [
+                    -122.08341,
+                    37.38662
+                  ],
+                  [
+                    -122.08354,
+                    37.38641
+                  ],
+                  [
+                    -122.08358,
+                    37.38634
+                  ],
+                  [
+                    -122.08369,
+                    37.38613
+                  ],
+                  [
+                    -122.08378,
+                    37.38597
+                  ],
+                  [
+                    -122.08381,
+                    37.38592
+                  ],
+                  [
+                    -122.08382,
+                    37.3859
+                  ],
+                  [
+                    -122.08385,
+                    37.38584
+                  ],
+                  [
+                    -122.08399,
+                    37.38591
+                  ],
+                  [
+                    -122.08417,
+                    37.386
+                  ],
+                  [
+                    -122.08421,
+                    37.38601
+                  ],
+                  [
+                    -122.08424,
+                    37.38603
+                  ],
+                  [
+                    -122.0845,
+                    37.38616
+                  ],
+                  [
+                    -122.08451,
+                    37.38617
+                  ],
+                  [
+                    -122.08451,
+                    37.38617
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "wait_for_city_bus",
+          "type": "WAITING",
+          "mode": "STOPPED",
+          "name": "Wait for BUS at #52 bus stop at Castro",
+          "loc": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "#52 bus stop at Castro",
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -122.08473175764084,
+                      37.38614273772653
+                    ],
+                    [
+                      -122.08421409130096,
+                      37.38589978281263
+                    ],
+                    [
+                      -122.08414971828459,
+                      37.386091589389046
+                    ],
+                    [
+                      -122.08459496498106,
+                      37.38629192017829
+                    ],
+                    [
+                      -122.08473175764084,
+                      37.38614273772653
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "city_bus",
+          "name": "Castro to Foothill",
+          "mode": "BUS",
+          "multiple_occupancy": true,
+          "start_loc": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "#52 bus stop at Castro",
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -122.08473175764084,
+                      37.38614273772653
+                    ],
+                    [
+                      -122.08421409130096,
+                      37.38589978281263
+                    ],
+                    [
+                      -122.08414971828459,
+                      37.386091589389046
+                    ],
+                    [
+                      -122.08459496498106,
+                      37.38629192017829
+                    ],
+                    [
+                      -122.08473175764084,
+                      37.38614273772653
+                    ]
+                  ]
+                ]
+              }
+            }
+          ],
+          "end_loc": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Foothill pool",
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -122.12685048580168,
+                      37.362440271054396
+                    ],
+                    [
+                      -122.1265272796154,
+                      37.362024558461364
+                    ],
+                    [
+                      -122.12642133235931,
+                      37.362132217584644
+                    ],
+                    [
+                      -122.1267431974411,
+                      37.36249996292995
+                    ],
+                    [
+                      -122.12685048580168,
+                      37.362440271054396
+                    ]
+                  ]
+                ]
+              }
+            }
+          ],
+          "polyline": "o~dcFdschV]|@Uj@k@vAa@bAQd@a@dAKTWp@a@dAKVQh@??Qd@EN??CD??O`@??GP??CHCD??A@??IR??EJ??EL??GNEJ??GLAB??IR??A@??GP??AB??CF??O\\??ABGPOb@Uf@Yv@y@rB[t@c@fAUl@Qf@KRM\\Sf@O\\w@rB_@|@[x@MXYp@KVIPYd@QX??GJY`@[b@OR??KLA@GHQR_@`@UTEDC@KJ??QP??P\\??JRTb@FPPR??lAD??T@XBP?H@V@??N@L?l@B??J@`@B??N@tADf@?PE??\\?R?p@@vB@rD?J?x@???x@???p@PNF\\THFBBNL??RB??^^JHnAlAZX\\\\xD~CpApAHFjAfAnBhB`Ax@BBFF^ZvBtBHFBDLJ??NNfBdB??zDvD??l@h@??jAjA??bDvChAfAn@n@DBJJPRPPh@f@XVdBbB\\\\dE`EnAfALLRN^`@XTp@l@NL??`@\\@@NN??NV@@pFtETH??DD^X??XRPNJH??HP??j@d@??VRRPTD??PL~@x@??TXJJ??~@~@@@LL??TT??JJJJXVPPTP??zBzBf@b@??h@p@JL@@LP??pCrCjCdCpG`G??j@f@^\\@@LL??nAdA`BrA??\\\\jFhF??d@j@@BDD??X`@??DFLNl@t@lEtF??R^??lCbD??vCnDPR??\\h@@@FJLT??FPL^JZF^F`@Bn@??A`@ATCRERET]v@ETCPCT?T??FbB??IT@fBErA??G^M\\??[VI@I?QKGICEEGiAcBKK??c@e@MIIEMCEAQAO?O@O@OBMDIFIFGHGJEPCPCV??E~@APELENGLEFw@j@",
+          "type": "TRAVEL",
+          "route_coords": [
+            {
+              "type": "Feature",
+              "properties": {
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    -122.08451,
+                    37.38616
+                  ],
+                  [
+                    -122.08482,
+                    37.38631
+                  ],
+                  [
+                    -122.08504,
+                    37.38642
+                  ],
+                  [
+                    -122.08548,
+                    37.38664
+                  ],
+                  [
+                    -122.08582,
+                    37.38681
+                  ],
+                  [
+                    -122.08601,
+                    37.3869
+                  ],
+                  [
+                    -122.08636,
+                    37.38707
+                  ],
+                  [
+                    -122.08647,
+                    37.38713
+                  ],
+                  [
+                    -122.08672,
+                    37.38725
+                  ],
+                  [
+                    -122.08707,
+                    37.38742
+                  ],
+                  [
+                    -122.08719,
+                    37.38748
+                  ],
+                  [
+                    -122.0874,
+                    37.38757
+                  ],
+                  [
+                    -122.0874,
+                    37.38757
+                  ],
+                  [
+                    -122.08759,
+                    37.38766
+                  ],
+                  [
+                    -122.08767,
+                    37.38769
+                  ],
+                  [
+                    -122.08767,
+                    37.38769
+                  ],
+                  [
+                    -122.0877,
+                    37.38771
+                  ],
+                  [
+                    -122.0877,
+                    37.38771
+                  ],
+                  [
+                    -122.08787,
+                    37.38779
+                  ],
+                  [
+                    -122.08787,
+                    37.38779
+                  ],
+                  [
+                    -122.08796,
+                    37.38783
+                  ],
+                  [
+                    -122.08796,
+                    37.38783
+                  ],
+                  [
+                    -122.08801,
+                    37.38785
+                  ],
+                  [
+                    -122.08804,
+                    37.38787
+                  ],
+                  [
+                    -122.08804,
+                    37.38787
+                  ],
+                  [
+                    -122.08805,
+                    37.38788
+                  ],
+                  [
+                    -122.08805,
+                    37.38788
+                  ],
+                  [
+                    -122.08815,
+                    37.38793
+                  ],
+                  [
+                    -122.08815,
+                    37.38793
+                  ],
+                  [
+                    -122.08821,
+                    37.38796
+                  ],
+                  [
+                    -122.08821,
+                    37.38796
+                  ],
+                  [
+                    -122.08828,
+                    37.38799
+                  ],
+                  [
+                    -122.08828,
+                    37.38799
+                  ],
+                  [
+                    -122.08836,
+                    37.38803
+                  ],
+                  [
+                    -122.08842,
+                    37.38806
+                  ],
+                  [
+                    -122.08842,
+                    37.38806
+                  ],
+                  [
+                    -122.08849,
+                    37.3881
+                  ],
+                  [
+                    -122.08851,
+                    37.38811
+                  ],
+                  [
+                    -122.08851,
+                    37.38811
+                  ],
+                  [
+                    -122.08861,
+                    37.38816
+                  ],
+                  [
+                    -122.08861,
+                    37.38816
+                  ],
+                  [
+                    -122.08862,
+                    37.38817
+                  ],
+                  [
+                    -122.08862,
+                    37.38817
+                  ],
+                  [
+                    -122.08871,
+                    37.38821
+                  ],
+                  [
+                    -122.08871,
+                    37.38821
+                  ],
+                  [
+                    -122.08873,
+                    37.38822
+                  ],
+                  [
+                    -122.08873,
+                    37.38822
+                  ],
+                  [
+                    -122.08877,
+                    37.38824
+                  ],
+                  [
+                    -122.08877,
+                    37.38824
+                  ],
+                  [
+                    -122.08892,
+                    37.38832
+                  ],
+                  [
+                    -122.08892,
+                    37.38832
+                  ],
+                  [
+                    -122.08894,
+                    37.38833
+                  ],
+                  [
+                    -122.08903,
+                    37.38837
+                  ],
+                  [
+                    -122.08921,
+                    37.38845
+                  ],
+                  [
+                    -122.08941,
+                    37.38856
+                  ],
+                  [
+                    -122.08969,
+                    37.38869
+                  ],
+                  [
+                    -122.09027,
+                    37.38898
+                  ],
+                  [
+                    -122.09054,
+                    37.38912
+                  ],
+                  [
+                    -122.0909,
+                    37.3893
+                  ],
+                  [
+                    -122.09113,
+                    37.38941
+                  ],
+                  [
+                    -122.09133,
+                    37.3895
+                  ],
+                  [
+                    -122.09143,
+                    37.38956
+                  ],
+                  [
+                    -122.09158,
+                    37.38963
+                  ],
+                  [
+                    -122.09178,
+                    37.38973
+                  ],
+                  [
+                    -122.09193,
+                    37.38981
+                  ],
+                  [
+                    -122.09251,
+                    37.39009
+                  ],
+                  [
+                    -122.09282,
+                    37.39025
+                  ],
+                  [
+                    -122.09311,
+                    37.39039
+                  ],
+                  [
+                    -122.09324,
+                    37.39046
+                  ],
+                  [
+                    -122.09349,
+                    37.39059
+                  ],
+                  [
+                    -122.09361,
+                    37.39065
+                  ],
+                  [
+                    -122.0937,
+                    37.3907
+                  ],
+                  [
+                    -122.09389,
+                    37.39083
+                  ],
+                  [
+                    -122.09402,
+                    37.39092
+                  ],
+                  [
+                    -122.09402,
+                    37.39092
+                  ],
+                  [
+                    -122.09408,
+                    37.39096
+                  ],
+                  [
+                    -122.09425,
+                    37.39109
+                  ],
+                  [
+                    -122.09443,
+                    37.39123
+                  ],
+                  [
+                    -122.09453,
+                    37.39131
+                  ],
+                  [
+                    -122.09453,
+                    37.39131
+                  ],
+                  [
+                    -122.0946,
+                    37.39137
+                  ],
+                  [
+                    -122.09461,
+                    37.39138
+                  ],
+                  [
+                    -122.09466,
+                    37.39142
+                  ],
+                  [
+                    -122.09476,
+                    37.39151
+                  ],
+                  [
+                    -122.09493,
+                    37.39167
+                  ],
+                  [
+                    -122.09504,
+                    37.39178
+                  ],
+                  [
+                    -122.09507,
+                    37.39181
+                  ],
+                  [
+                    -122.09508,
+                    37.39183
+                  ],
+                  [
+                    -122.09514,
+                    37.39189
+                  ],
+                  [
+                    -122.09514,
+                    37.39189
+                  ],
+                  [
+                    -122.09523,
+                    37.39198
+                  ],
+                  [
+                    -122.09523,
+                    37.39198
+                  ],
+                  [
+                    -122.09538,
+                    37.39189
+                  ],
+                  [
+                    -122.09538,
+                    37.39189
+                  ],
+                  [
+                    -122.09548,
+                    37.39183
+                  ],
+                  [
+                    -122.09566,
+                    37.39172
+                  ],
+                  [
+                    -122.09575,
+                    37.39168
+                  ],
+                  [
+                    -122.09585,
+                    37.39159
+                  ],
+                  [
+                    -122.09585,
+                    37.39159
+                  ],
+                  [
+                    -122.09588,
+                    37.3912
+                  ],
+                  [
+                    -122.09588,
+                    37.3912
+                  ],
+                  [
+                    -122.09589,
+                    37.39109
+                  ],
+                  [
+                    -122.09591,
+                    37.39096
+                  ],
+                  [
+                    -122.09591,
+                    37.39087
+                  ],
+                  [
+                    -122.09592,
+                    37.39082
+                  ],
+                  [
+                    -122.09593,
+                    37.3907
+                  ],
+                  [
+                    -122.09593,
+                    37.3907
+                  ],
+                  [
+                    -122.09594,
+                    37.39062
+                  ],
+                  [
+                    -122.09594,
+                    37.39055
+                  ],
+                  [
+                    -122.09596,
+                    37.39032
+                  ],
+                  [
+                    -122.09596,
+                    37.39032
+                  ],
+                  [
+                    -122.09597,
+                    37.39026
+                  ],
+                  [
+                    -122.09599,
+                    37.39009
+                  ],
+                  [
+                    -122.09599,
+                    37.39009
+                  ],
+                  [
+                    -122.096,
+                    37.39001
+                  ],
+                  [
+                    -122.09603,
+                    37.38958
+                  ],
+                  [
+                    -122.09603,
+                    37.38938
+                  ],
+                  [
+                    -122.096,
+                    37.38929
+                  ],
+                  [
+                    -122.096,
+                    37.38929
+                  ],
+                  [
+                    -122.096,
+                    37.38914
+                  ],
+                  [
+                    -122.096,
+                    37.38904
+                  ],
+                  [
+                    -122.09601,
+                    37.38879
+                  ],
+                  [
+                    -122.09602,
+                    37.38819
+                  ],
+                  [
+                    -122.09602,
+                    37.38729
+                  ],
+                  [
+                    -122.09602,
+                    37.38723
+                  ],
+                  [
+                    -122.09602,
+                    37.38694
+                  ],
+                  [
+                    -122.09602,
+                    37.38694
+                  ],
+                  [
+                    -122.09602,
+                    37.38665
+                  ],
+                  [
+                    -122.09602,
+                    37.38665
+                  ],
+                  [
+                    -122.09611,
+                    37.3864
+                  ],
+                  [
+                    -122.09615,
+                    37.38632
+                  ],
+                  [
+                    -122.09626,
+                    37.38617
+                  ],
+                  [
+                    -122.0963,
+                    37.38612
+                  ],
+                  [
+                    -122.09632,
+                    37.3861
+                  ],
+                  [
+                    -122.09639,
+                    37.38602
+                  ],
+                  [
+                    -122.09639,
+                    37.38602
+                  ],
+                  [
+                    -122.09641,
+                    37.38592
+                  ],
+                  [
+                    -122.09641,
+                    37.38592
+                  ],
+                  [
+                    -122.09657,
+                    37.38576
+                  ],
+                  [
+                    -122.09662,
+                    37.3857
+                  ],
+                  [
+                    -122.09701,
+                    37.3853
+                  ],
+                  [
+                    -122.09714,
+                    37.38516
+                  ],
+                  [
+                    -122.09729,
+                    37.38501
+                  ],
+                  [
+                    -122.09809,
+                    37.38408
+                  ],
+                  [
+                    -122.0985,
+                    37.38367
+                  ],
+                  [
+                    -122.09854,
+                    37.38362
+                  ],
+                  [
+                    -122.0989,
+                    37.38324
+                  ],
+                  [
+                    -122.09943,
+                    37.38268
+                  ],
+                  [
+                    -122.09972,
+                    37.38235
+                  ],
+                  [
+                    -122.09974,
+                    37.38233
+                  ],
+                  [
+                    -122.09978,
+                    37.38229
+                  ],
+                  [
+                    -122.09992,
+                    37.38213
+                  ],
+                  [
+                    -122.10051,
+                    37.38153
+                  ],
+                  [
+                    -122.10055,
+                    37.38148
+                  ],
+                  [
+                    -122.10058,
+                    37.38146
+                  ],
+                  [
+                    -122.10064,
+                    37.38139
+                  ],
+                  [
+                    -122.10064,
+                    37.38139
+                  ],
+                  [
+                    -122.10072,
+                    37.38131
+                  ],
+                  [
+                    -122.10123,
+                    37.38079
+                  ],
+                  [
+                    -122.10123,
+                    37.38079
+                  ],
+                  [
+                    -122.10215,
+                    37.37985
+                  ],
+                  [
+                    -122.10215,
+                    37.37985
+                  ],
+                  [
+                    -122.10236,
+                    37.37962
+                  ],
+                  [
+                    -122.10236,
+                    37.37962
+                  ],
+                  [
+                    -122.10274,
+                    37.37924
+                  ],
+                  [
+                    -122.10274,
+                    37.37924
+                  ],
+                  [
+                    -122.1035,
+                    37.37842
+                  ],
+                  [
+                    -122.10386,
+                    37.37805
+                  ],
+                  [
+                    -122.1041,
+                    37.37781
+                  ],
+                  [
+                    -122.10412,
+                    37.37778
+                  ],
+                  [
+                    -122.10418,
+                    37.37772
+                  ],
+                  [
+                    -122.10428,
+                    37.37763
+                  ],
+                  [
+                    -122.10437,
+                    37.37754
+                  ],
+                  [
+                    -122.10457,
+                    37.37733
+                  ],
+                  [
+                    -122.10469,
+                    37.3772
+                  ],
+                  [
+                    -122.10519,
+                    37.37669
+                  ],
+                  [
+                    -122.10534,
+                    37.37654
+                  ],
+                  [
+                    -122.10631,
+                    37.37555
+                  ],
+                  [
+                    -122.10667,
+                    37.37515
+                  ],
+                  [
+                    -122.10674,
+                    37.37508
+                  ],
+                  [
+                    -122.10682,
+                    37.37498
+                  ],
+                  [
+                    -122.10699,
+                    37.37482
+                  ],
+                  [
+                    -122.1071,
+                    37.37469
+                  ],
+                  [
+                    -122.10733,
+                    37.37444
+                  ],
+                  [
+                    -122.1074,
+                    37.37436
+                  ],
+                  [
+                    -122.1074,
+                    37.37436
+                  ],
+                  [
+                    -122.10755,
+                    37.37419
+                  ],
+                  [
+                    -122.10756,
+                    37.37418
+                  ],
+                  [
+                    -122.10764,
+                    37.3741
+                  ],
+                  [
+                    -122.10764,
+                    37.3741
+                  ],
+                  [
+                    -122.10776,
+                    37.37402
+                  ],
+                  [
+                    -122.10777,
+                    37.37401
+                  ],
+                  [
+                    -122.10884,
+                    37.3728
+                  ],
+                  [
+                    -122.10889,
+                    37.37269
+                  ],
+                  [
+                    -122.10889,
+                    37.37269
+                  ],
+                  [
+                    -122.10892,
+                    37.37266
+                  ],
+                  [
+                    -122.10905,
+                    37.3725
+                  ],
+                  [
+                    -122.10905,
+                    37.3725
+                  ],
+                  [
+                    -122.10915,
+                    37.37237
+                  ],
+                  [
+                    -122.10923,
+                    37.37228
+                  ],
+                  [
+                    -122.10928,
+                    37.37222
+                  ],
+                  [
+                    -122.10928,
+                    37.37222
+                  ],
+                  [
+                    -122.10937,
+                    37.37217
+                  ],
+                  [
+                    -122.10937,
+                    37.37217
+                  ],
+                  [
+                    -122.10956,
+                    37.37195
+                  ],
+                  [
+                    -122.10956,
+                    37.37195
+                  ],
+                  [
+                    -122.10966,
+                    37.37183
+                  ],
+                  [
+                    -122.10975,
+                    37.37173
+                  ],
+                  [
+                    -122.10978,
+                    37.37162
+                  ],
+                  [
+                    -122.10978,
+                    37.37162
+                  ],
+                  [
+                    -122.10985,
+                    37.37153
+                  ],
+                  [
+                    -122.11014,
+                    37.37121
+                  ],
+                  [
+                    -122.11014,
+                    37.37121
+                  ],
+                  [
+                    -122.11027,
+                    37.3711
+                  ],
+                  [
+                    -122.11033,
+                    37.37104
+                  ],
+                  [
+                    -122.11033,
+                    37.37104
+                  ],
+                  [
+                    -122.11065,
+                    37.37072
+                  ],
+                  [
+                    -122.11066,
+                    37.37071
+                  ],
+                  [
+                    -122.11073,
+                    37.37064
+                  ],
+                  [
+                    -122.11073,
+                    37.37064
+                  ],
+                  [
+                    -122.11084,
+                    37.37053
+                  ],
+                  [
+                    -122.11084,
+                    37.37053
+                  ],
+                  [
+                    -122.1109,
+                    37.37047
+                  ],
+                  [
+                    -122.11096,
+                    37.37041
+                  ],
+                  [
+                    -122.11108,
+                    37.37028
+                  ],
+                  [
+                    -122.11117,
+                    37.37019
+                  ],
+                  [
+                    -122.11126,
+                    37.37008
+                  ],
+                  [
+                    -122.11126,
+                    37.37008
+                  ],
+                  [
+                    -122.11188,
+                    37.36946
+                  ],
+                  [
+                    -122.11206,
+                    37.36926
+                  ],
+                  [
+                    -122.11206,
+                    37.36926
+                  ],
+                  [
+                    -122.11231,
+                    37.36905
+                  ],
+                  [
+                    -122.11238,
+                    37.36899
+                  ],
+                  [
+                    -122.11239,
+                    37.36898
+                  ],
+                  [
+                    -122.11248,
+                    37.36891
+                  ],
+                  [
+                    -122.11248,
+                    37.36891
+                  ],
+                  [
+                    -122.11322,
+                    37.36818
+                  ],
+                  [
+                    -122.11389,
+                    37.36748
+                  ],
+                  [
+                    -122.11518,
+                    37.36611
+                  ],
+                  [
+                    -122.11518,
+                    37.36611
+                  ],
+                  [
+                    -122.11538,
+                    37.36589
+                  ],
+                  [
+                    -122.11553,
+                    37.36573
+                  ],
+                  [
+                    -122.11554,
+                    37.36572
+                  ],
+                  [
+                    -122.11561,
+                    37.36565
+                  ],
+                  [
+                    -122.11561,
+                    37.36565
+                  ],
+                  [
+                    -122.11596,
+                    37.36525
+                  ],
+                  [
+                    -122.11638,
+                    37.36476
+                  ],
+                  [
+                    -122.11638,
+                    37.36476
+                  ],
+                  [
+                    -122.11653,
+                    37.36461
+                  ],
+                  [
+                    -122.1177,
+                    37.36343
+                  ],
+                  [
+                    -122.1177,
+                    37.36343
+                  ],
+                  [
+                    -122.11792,
+                    37.36324
+                  ],
+                  [
+                    -122.11794,
+                    37.36323
+                  ],
+                  [
+                    -122.11797,
+                    37.3632
+                  ],
+                  [
+                    -122.11797,
+                    37.3632
+                  ],
+                  [
+                    -122.11814,
+                    37.36307
+                  ],
+                  [
+                    -122.11814,
+                    37.36307
+                  ],
+                  [
+                    -122.11818,
+                    37.36304
+                  ],
+                  [
+                    -122.11826,
+                    37.36297
+                  ],
+                  [
+                    -122.11853,
+                    37.36274
+                  ],
+                  [
+                    -122.11976,
+                    37.36171
+                  ],
+                  [
+                    -122.11976,
+                    37.36171
+                  ],
+                  [
+                    -122.11992,
+                    37.36161
+                  ],
+                  [
+                    -122.11992,
+                    37.36161
+                  ],
+                  [
+                    -122.12074,
+                    37.3609
+                  ],
+                  [
+                    -122.12074,
+                    37.3609
+                  ],
+                  [
+                    -122.12162,
+                    37.36014
+                  ],
+                  [
+                    -122.12172,
+                    37.36005
+                  ],
+                  [
+                    -122.12172,
+                    37.36005
+                  ],
+                  [
+                    -122.12193,
+                    37.3599
+                  ],
+                  [
+                    -122.12194,
+                    37.35989
+                  ],
+                  [
+                    -122.122,
+                    37.35985
+                  ],
+                  [
+                    -122.12211,
+                    37.35978
+                  ],
+                  [
+                    -122.12211,
+                    37.35978
+                  ],
+                  [
+                    -122.1222,
+                    37.35974
+                  ],
+                  [
+                    -122.12236,
+                    37.35967
+                  ],
+                  [
+                    -122.1225,
+                    37.35961
+                  ],
+                  [
+                    -122.12266,
+                    37.35957
+                  ],
+                  [
+                    -122.12283,
+                    37.35953
+                  ],
+                  [
+                    -122.12307,
+                    37.35951
+                  ],
+                  [
+                    -122.12307,
+                    37.35951
+                  ],
+                  [
+                    -122.12324,
+                    37.35952
+                  ],
+                  [
+                    -122.12335,
+                    37.35953
+                  ],
+                  [
+                    -122.12345,
+                    37.35955
+                  ],
+                  [
+                    -122.12355,
+                    37.35958
+                  ],
+                  [
+                    -122.12366,
+                    37.35961
+                  ],
+                  [
+                    -122.12394,
+                    37.35976
+                  ],
+                  [
+                    -122.12405,
+                    37.35979
+                  ],
+                  [
+                    -122.12414,
+                    37.35981
+                  ],
+                  [
+                    -122.12425,
+                    37.35983
+                  ],
+                  [
+                    -122.12436,
+                    37.35983
+                  ],
+                  [
+                    -122.12436,
+                    37.35983
+                  ],
+                  [
+                    -122.12486,
+                    37.35979
+                  ],
+                  [
+                    -122.12486,
+                    37.35979
+                  ],
+                  [
+                    -122.12497,
+                    37.35984
+                  ],
+                  [
+                    -122.12549,
+                    37.35983
+                  ],
+                  [
+                    -122.12591,
+                    37.35986
+                  ],
+                  [
+                    -122.12591,
+                    37.35986
+                  ],
+                  [
+                    -122.12607,
+                    37.3599
+                  ],
+                  [
+                    -122.12622,
+                    37.35997
+                  ],
+                  [
+                    -122.12622,
+                    37.35997
+                  ],
+                  [
+                    -122.12634,
+                    37.36011
+                  ],
+                  [
+                    -122.12635,
+                    37.36016
+                  ],
+                  [
+                    -122.12635,
+                    37.36021
+                  ],
+                  [
+                    -122.12629,
+                    37.3603
+                  ],
+                  [
+                    -122.12624,
+                    37.36034
+                  ],
+                  [
+                    -122.12621,
+                    37.36036
+                  ],
+                  [
+                    -122.12617,
+                    37.36039
+                  ],
+                  [
+                    -122.12567,
+                    37.36076
+                  ],
+                  [
+                    -122.12561,
+                    37.36082
+                  ],
+                  [
+                    -122.12561,
+                    37.36082
+                  ],
+                  [
+                    -122.12542,
+                    37.361
+                  ],
+                  [
+                    -122.12537,
+                    37.36107
+                  ],
+                  [
+                    -122.12534,
+                    37.36112
+                  ],
+                  [
+                    -122.12532,
+                    37.36119
+                  ],
+                  [
+                    -122.12531,
+                    37.36122
+                  ],
+                  [
+                    -122.1253,
+                    37.36131
+                  ],
+                  [
+                    -122.1253,
+                    37.36139
+                  ],
+                  [
+                    -122.12531,
+                    37.36147
+                  ],
+                  [
+                    -122.12532,
+                    37.36155
+                  ],
+                  [
+                    -122.12534,
+                    37.36163
+                  ],
+                  [
+                    -122.12537,
+                    37.3617
+                  ],
+                  [
+                    -122.12541,
+                    37.36175
+                  ],
+                  [
+                    -122.12545,
+                    37.3618
+                  ],
+                  [
+                    -122.1255,
+                    37.36184
+                  ],
+                  [
+                    -122.12556,
+                    37.36188
+                  ],
+                  [
+                    -122.12565,
+                    37.36191
+                  ],
+                  [
+                    -122.12574,
+                    37.36193
+                  ],
+                  [
+                    -122.12586,
+                    37.36195
+                  ],
+                  [
+                    -122.12586,
+                    37.36195
+                  ],
+                  [
+                    -122.12618,
+                    37.36198
+                  ],
+                  [
+                    -122.12627,
+                    37.36199
+                  ],
+                  [
+                    -122.12634,
+                    37.36202
+                  ],
+                  [
+                    -122.12642,
+                    37.36205
+                  ],
+                  [
+                    -122.12649,
+                    37.36209
+                  ],
+                  [
+                    -122.12653,
+                    37.36212
+                  ],
+                  [
+                    -122.12675,
+                    37.3624
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "campus_walk",
+          "name": "Walk on the Foothill campus",
+          "mode": "WALKING",
+          "start_loc": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Foothill pool",
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -122.12678946554661,
+                      37.3624887707069
+                    ],
+                    [
+                      -122.1268632262945,
+                      37.36245146328467
+                    ],
+                    [
+                      -122.12655209004879,
+                      37.362050140841276
+                    ],
+                    [
+                      -122.12643943727016,
+                      37.36215779992784
+                    ],
+                    [
+                      -122.12671637535095,
+                      37.36252447922224
+                    ],
+                    [
+                      -122.12678946554661,
+                      37.3624887707069
+                    ]
+                  ]
+                ]
+              }
+            }
+          ],
+          "end_loc": [
+            {
+              "type": "Feature",
+              "properties": {
+                "name": "Foothill fountain",
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      -122.12924435734747,
+                      37.36135941352246
+                    ],
+                    [
+                      -122.12901771068573,
+                      37.36108013616577
+                    ],
+                    [
+                      -122.12868243455887,
+                      37.361213379309085
+                    ],
+                    [
+                      -122.12891444563866,
+                      37.361499051811045
+                    ],
+                    [
+                      -122.12924435734747,
+                      37.36135941352246
+                    ]
+                  ]
+                ]
+              }
+            }
+          ],
+          "polyline": "mj`cFd{khVIHEGk@uAGOVQBFDHBHDH@BBFHRt@i@BFDHRRDDHFFJDJn@~AN`@L^_@Va@TOb@D\\Pb@JRF^Df@????f@xA????j@]",
+          "type": "TRAVEL",
+          "route_coords": [
+            {
+              "type": "Feature",
+              "properties": {
+                "valid_start_fmt_date": "2019-06-11",
+                "valid_start_ts": 1560211200,
+                "valid_end_fmt_date": "2019-06-22",
+                "valid_end_ts": 1561161600
+              },
+              "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                  [
+                    -122.12675,
+                    37.36247
+                  ],
+                  [
+                    -122.1268,
+                    37.36252
+                  ],
+                  [
+                    -122.12676,
+                    37.36255
+                  ],
+                  [
+                    -122.12633,
+                    37.36277
+                  ],
+                  [
+                    -122.12625,
+                    37.36281
+                  ],
+                  [
+                    -122.12616,
+                    37.36269
+                  ],
+                  [
+                    -122.1262,
+                    37.36267
+                  ],
+                  [
+                    -122.12625,
+                    37.36264
+                  ],
+                  [
+                    -122.1263,
+                    37.36262
+                  ],
+                  [
+                    -122.12635,
+                    37.36259
+                  ],
+                  [
+                    -122.12637,
+                    37.36258
+                  ],
+                  [
+                    -122.12641,
+                    37.36256
+                  ],
+                  [
+                    -122.12651,
+                    37.36251
+                  ],
+                  [
+                    -122.1263,
+                    37.36224
+                  ],
+                  [
+                    -122.12634,
+                    37.36222
+                  ],
+                  [
+                    -122.12639,
+                    37.36219
+                  ],
+                  [
+                    -122.12649,
+                    37.36209
+                  ],
+                  [
+                    -122.12652,
+                    37.36206
+                  ],
+                  [
+                    -122.12656,
+                    37.36201
+                  ],
+                  [
+                    -122.12662,
+                    37.36197
+                  ],
+                  [
+                    -122.12668,
+                    37.36194
+                  ],
+                  [
+                    -122.12716,
+                    37.3617
+                  ],
+                  [
+                    -122.12733,
+                    37.36162
+                  ],
+                  [
+                    -122.12749,
+                    37.36155
+                  ],
+                  [
+                    -122.12761,
+                    37.36171
+                  ],
+                  [
+                    -122.12772,
+                    37.36188
+                  ],
+                  [
+                    -122.1279,
+                    37.36196
+                  ],
+                  [
+                    -122.12805,
+                    37.36193
+                  ],
+                  [
+                    -122.12823,
+                    37.36184
+                  ],
+                  [
+                    -122.12833,
+                    37.36178
+                  ],
+                  [
+                    -122.12849,
+                    37.36174
+                  ],
+                  [
+                    -122.12869,
+                    37.36171
+                  ],
+                  [
+                    -122.12869,
+                    37.36171
+                  ],
+                  [
+                    -122.12869,
+                    37.36171
+                  ],
+                  [
+                    -122.12914,
+                    37.36151
+                  ],
+                  [
+                    -122.12914,
+                    37.36151
+                  ],
+                  [
+                    -122.12914,
+                    37.36151
+                  ],
+                  [
+                    -122.12899,
+                    37.36129
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "setup_notes": {
+    "ios": [
+      "Initial iOS versions: ucb.sdb.ios.1: 9.3; ucb.sdb.ios.2: 11.2.1; ucb.sdb.ios.3: 9.3; ucb.sdb.ios.4: 10.3.2",
+      "iOS does not support incremental updates, so will need to update everything to the most recent iOS 12",
+      "update to 12.3.1",
+      "Erase all data and settings",
+      "English, United States",
+      "Set up manually",
+      "Connect to WiFi",
+      "Disabled: Touch ID, Automatic updates, Wallet, iCloud Keychain, Siri, Screen Time, Analytics",
+      "Enabled: Location services",
+      "Sign in with Apple ID",
+      "Turn off updates from the app store",
+      "Login to gmail through the mail app",
+      "phone #2 turned out to have 50% battery health. Replaced battery",
+      "turned on _do not disturb_ for consistency with android"
+    ],
+    "android": [
+      "factory data reset (still at version 6.0.1)",
+      "English, United States",
+      "Connect to WiFi",
+      "Sign in with google account",
+      "Don't back up data, enable google location service, improve location accuracy, don't send diagnostic data",
+      "Not setting up: payment info, other email",
+      "Don't restore; set up password",
+      "Don't enable Google Now",
+      "Don't accept update to 7",
+      "If prompted, add number",
+      "Turn off app auto-updates; 35 apps can be updated.; Update only the _Android System Webview_ manually",
+      "phone #3 is persistently stuck at an older version of google play services, although I follow the same procedure. and the older version is too old for the app.  So one-time update of all 35 apps.",
+      "even after the update, phone #3 has a different UI than the others. A/B testing?",
+      "got phone call on android 4, which turned on the screen and got the phone out of doze mode, turned on _do not disturb_"
+    ]
+  },
+  "start_ts": 1615104000,
+  "end_ts": 1616137200
+}
